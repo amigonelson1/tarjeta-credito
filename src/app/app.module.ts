@@ -7,6 +7,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 
+//Modulo para peticiones http;
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +21,7 @@ import { ToastrModule } from 'ngx-toastr';
     ReactiveFormsModule, // importamos este modulo para usar formularios reactivos;
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
+    HttpClientModule, //modulo para peticiones http;
   ],
   providers: [],
   bootstrap: [AppComponent]
